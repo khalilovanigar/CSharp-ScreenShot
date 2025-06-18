@@ -16,12 +16,12 @@ class Program
 
         if (choice == "2")
         {
-            System.Console.WriteLine("This program is not suitable for Windows,exit from program.");
+            System.Console.WriteLine("This program is not suitable for Windows, Exit from program.");
             return;
         }
         else if (choice != "1")
         {
-            System.Console.WriteLine("Wrong input,existing from program.");
+            System.Console.WriteLine("Wrong input, Exit from program.");
             return;
         }
 
