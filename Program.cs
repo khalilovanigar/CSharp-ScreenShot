@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 
@@ -6,6 +6,25 @@ class Program
 {
     static void Main()
     {
+
+        System.Console.WriteLine("Select your operating system:");
+        System.Console.WriteLine("1 - macOS");
+        System.Console.WriteLine("2 - Windows");
+        System.Console.Write("Enter your choice (1 or 2): ");
+
+        string choice = Console.ReadLine()!;
+
+        if (choice == "2")
+        {
+            System.Console.WriteLine("This program is not suitable for Windows..");
+            return;
+        }
+        else if (choice != "1")
+        {
+            System.Console.WriteLine("Invalid choice. Exiting.");
+            return;
+        }
+
         string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         string imagesPath = Path.Combine(desktop, "Images");
 
